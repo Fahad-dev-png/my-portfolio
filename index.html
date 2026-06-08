@@ -7,20 +7,9 @@
         body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; text-align: center; margin: 0; padding: 20px; }
         .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         h1 { color: #333; }
+        img { width: 100%; border-radius: 10px; margin: 15px 0; transition: transform 0.5s ease; cursor: pointer; }
+        img:hover { transform: perspective(1000px) rotateY(10deg) scale(1.05); }
         .btn { display: block; width: 80%; margin: 15px auto; padding: 15px; text-decoration: none; border-radius: 50px; font-weight: bold; color: white; background: #d32f2f; }
-        
-        /* هنا نضع كود الـ 3D الجديد */
-        img { 
-            width: 100%; 
-            border-radius: 10px; 
-            margin: 15px 0;
-            transition: transform 0.5s ease, box-shadow 0.5s ease;
-            cursor: pointer;
-        }
-        img:hover {
-            transform: perspective(1000px) rotateY(10deg) scale(1.05);
-            box-shadow: 0 20px 30px rgba(0,0,0,0.2);
-        }
     </style>
 </head>
 <body>
@@ -32,8 +21,16 @@
         <a href="https://linktr.ee/jobscareerpositions" class="btn">أحدث الوظائف</a>
         
         <img src="ptwo.png" alt="صورة عمل">
-        <p>نحن هنا للإجابة على تساؤلاتك</p>
-        <a href="mailto:your-fahadsaeedalasmari@gmail.com" class="btn" style="background:#007bff;">تواصل معنا</a>
+
+        <div id="contact" style="margin-top: 30px; text-align: right;">
+            <h2>تواصل معنا</h2>
+            <form action="https://formspree.io/f/mpqedjdd" method="POST">
+                <input type="text" name="name" placeholder="الاسم" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+                <input type="email" name="email" placeholder="البريد الإلكتروني" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;">
+                <textarea name="message" placeholder="استفسارك" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+                <button type="submit" style="width: 100%; padding: 15px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">إرسال الرسالة</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
