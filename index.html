@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1653174849108930"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1653174849108930" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <title>وظيفتك بلمسه</title>
     <style>
@@ -11,17 +10,20 @@
         h1 { color: #333; }
         img { width: 100%; border-radius: 10px; margin: 15px 0; transition: transform 0.5s ease; cursor: pointer; }
         img:hover { transform: perspective(1000px) rotateY(10deg) scale(1.05); }
-        /* تأثير حركة روابط المقالات عند تمرير الماوس */
+        .btn { display: block; width: 80%; margin: 15px auto; padding: 15px; text-decoration: none; border-radius: 50px; font-weight: bold; color: white; background: #d32f2f; }
+        
+        /* كود حركة روابط المقالات */
         .articles ul li a {
+            text-decoration: none;
+            color: #007bff;
             transition: all 0.3s ease;
             display: inline-block;
         }
         .articles ul li a:hover {
-            color: #d32f2f; /* يتغير اللون للأحمر */
-            transform: scale(1.1) translateX(10px); /* تكبير بسيط وتحريك جهة اليمين */
+            color: #d32f2f;
+            transform: scale(1.05) translateX(10px);
             font-weight: bold;
         }
-        .btn { display: block; width: 80%; margin: 15px auto; padding: 15px; text-decoration: none; border-radius: 50px; font-weight: bold; color: white; background: #d32f2f; }
     </style>
 </head>
 <body>
@@ -43,7 +45,7 @@
                 <button type="submit" style="width: 100%; padding: 15px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">إرسل وبالتوفيق</button>
             </form>
             
-            <div style="margin-top: 40px; padding: 20px; text-align: right; background: #fff; border-radius: 10px;">
+            <div class="articles" style="margin-top: 40px; padding: 20px; text-align: right; background: #fff; border-radius: 10px; border: 1px solid #eee;">
                 <h2>مقالات مهنية للتوظيف</h2>
                 <ul style="line-height: 2; list-style-type: square;">
                     <li><a href="article1.html">كيف تكتب سيرة ذاتية تجذب أصحاب العمل؟</a></li>
