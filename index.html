@@ -11,6 +11,16 @@
         h1 { color: #333; }
         img { width: 100%; border-radius: 10px; margin: 15px 0; transition: transform 0.5s ease; cursor: pointer; }
         img:hover { transform: perspective(1000px) rotateY(10deg) scale(1.05); }
+        /* تأثير حركة روابط المقالات عند تمرير الماوس */
+        .articles ul li a {
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .articles ul li a:hover {
+            color: #d32f2f; /* يتغير اللون للأحمر */
+            transform: scale(1.1) translateX(10px); /* تكبير بسيط وتحريك جهة اليمين */
+            font-weight: bold;
+        }
         .btn { display: block; width: 80%; margin: 15px auto; padding: 15px; text-decoration: none; border-radius: 50px; font-weight: bold; color: white; background: #d32f2f; }
     </style>
 </head>
