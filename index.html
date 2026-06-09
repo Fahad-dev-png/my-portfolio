@@ -10,9 +10,27 @@
         h1 { color: #333; }
         img { width: 100%; border-radius: 10px; margin: 15px 0; transition: transform 0.5s ease; cursor: pointer; }
         img:hover { transform: perspective(1000px) rotateY(10deg) scale(1.05); }
-        .btn { display: block; width: 80%; margin: 15px auto; padding: 15px; text-decoration: none; border-radius: 50px; font-weight: bold; color: white; background: #d32f2f; }
         
-        /* كود حركة روابط المقالات */
+        /* تأثير زر أحدث الوظائف */
+        .btn { 
+            display: block; 
+            width: 80%; 
+            margin: 15px auto; 
+            padding: 15px; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            color: white; 
+            background: #d32f2f; 
+            transition: all 0.4s ease; 
+        }
+        .btn:hover { 
+            background: #d32f2f; 
+            transform: scale(1.05); 
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+        }
+        
+        /* تأثير حركة روابط المقالات */
         .articles ul li a {
             text-decoration: none;
             color: #007bff;
